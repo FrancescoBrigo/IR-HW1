@@ -18,7 +18,8 @@ Il repository contiene:
 Più in dettaglio il notebook effettua un parsing dei file di valutazione (con la possibilità di settare il path di riferimento), riempiendo 3 array specifici per ogni run:
 - ap: contenente tutte le *Average Precision* per ogni topic;
 - p10: contenente tutte le *Precision@10* per ogni topic;
-- rprec: contenente tutte le *Precision at Recall base* per ogni topic;
+- rprec: contenente tutte le *Precision at Recall base* per ogni topic.
+
 Vengono inoltre riempiti 3 array comuni (maps,p10s,rprecs) in cui vengono inseriti i valori totali delle rispettive misure.
 Una volta effettuata questa operazioni viene effettuato il test ANOVA 1-way per verificare la similarità fra le varie run.
 Successivamente viene effettuato il test Tukey HSD per verificare le effettive differenze fra i gruppi e vengono mostrati graficamente i risultati.
